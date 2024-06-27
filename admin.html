@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Admin Panel</title>
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      background: linear-gradient(to bottom right, #000033, #001f4d, #003366, #004080);
+      color: #fff;
+      padding: 20px;
+    }
+
+    .form-container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .form-container input,
+    .form-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+    }
+
+    .form-container button {
+      background-color: #004080;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      background-color: #003366;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Admin Panel</h1>
+  <div class="form-container">
+    <h2>Informações Pessoais</h2>
+    <input type="text" id="fullName" placeholder="Nome Completo">
+    <textarea id="bio" placeholder="Breve Biografia"></textarea>
+    <input type="text" id="contactEmail" placeholder="Email">
+    <input type="text" id="contactPhone" placeholder="Telefone">
+    <input type="text" id="linkedin" placeholder="LinkedIn">
+    <input type="text" id="github" placeholder="GitHub">
+    <button onclick="savePersonalInfo()">Salvar</button>
+  </div>
+
+  <div class="form-container">
+    <h2>Projetos</h2>
+    <input type="text" id="projectImage" placeholder="Link da Imagem">
+    <input type="text" id="projectTitle" placeholder="Título">
+    <textarea id="projectDescription" placeholder="Descrição Breve"></textarea>
+    <button onclick="saveProjectInfo()">Salvar</button>
+  </div>
+
+  <div class="form-container">
+    <h2>Habilidades</h2>
+    <input type="text" id="skillName" placeholder="Nome da Habilidade">
+    <input type="text" id="skillLevel" placeholder="Nível da Habilidade">
+    <button onclick="saveSkillInfo()">Salvar</button>
+  </div>
+
+  <script>
+    function savePersonalInfo() {
+      const fullName = document.getElementById('fullName').value;
+      const bio = document.getElementById('bio').value;
+      const contactEmail = document.getElementById('contactEmail').value;
+      const contactPhone = document.getElementById('contactPhone').value;
+      const linkedin = document.getElementById('linkedin').value;
+      const github = document.getElementById('github').value;
+      // Salvar as informações pessoais (ex: enviar para um servidor)
+      alert('Informações pessoais salvas!');
+    }
+
+    function saveProjectInfo() {
+      const projectImage = document.getElementById('projectImage').value;
+      const projectTitle = document.getElementById('projectTitle').value;
+      const projectDescription = document.getElementById('projectDescription').value;
+      // Salvar as informações do projeto (ex: enviar para um servidor)
+      alert('Informações do projeto salvas!');
+    }
+
+    function saveSkillInfo() {
+      const skillName = document.getElementById('skillName').value;
+      const skillLevel = document.getElementById('skillLevel').value;
+      // Salvar as informações da habilidade (ex: enviar para um servidor)
+      alert('Informações da habilidade salvas!');
+    }
+  </script>
+</body>
+
+</html>
