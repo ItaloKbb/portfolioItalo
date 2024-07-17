@@ -1,0 +1,14 @@
+{
+  "name": "portfolioitalo",
+  "version": "1.0.0",
+  "description": "meu arquivo de portfolio",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Italo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
